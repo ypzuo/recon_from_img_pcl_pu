@@ -1,0 +1,11 @@
+python 2_train_pcl.py \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/2/pure_ae_1024_telephone\
+	--gpu 0 \
+	--category telephone \
+	--bottleneck 512 \
+	--batch_size 64 \
+	--lr 5e-4 \
+    --max_epoch 10 \
+	--bn_decoder \
+	--print_n 20 \
